@@ -1,0 +1,190 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    position: relative;
+}
+
+.header .head{
+    display: flex;
+    justify-content: center;
+}
+
+.header .head nav ul{
+    display: flex;
+    gap: 40px;
+    list-style: none;
+}
+
+.header .head nav ul li a{
+    text-decoration: none;
+    color: #0b1d33;
+    font-weight: 600;
+    font-size: 15px;
+    position: relative;
+}
+
+.header .head nav ul li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0;
+  height: 3px;
+  background:#0b1d33; 
+  transition: width 0.3s;
+}
+
+.header .head nav ul li a:hover::after {
+  width: 100%;
+}
+
+.header .Log{
+    display: flex;
+    gap: 20px;
+    cursor: pointer; 
+    position: absolute;
+    right: 100px;
+}
+
+.header .Log nav button{
+    color: #ff9510;
+    background-color: white;
+    font-size: 16px;
+    height: 36px;
+    width: 36px;
+    border-radius: 50%;
+    border: none;
+    box-shadow:0 20px 75px rgba(0,0,0,0.25);   
+}
+
+
+.header .Log nav button:hover{
+    cursor: pointer;
+    color: orange;
+    box-shadow: 0 8px 24px rgba(11, 14, 24, 0.18);
+    transform: translateY(-6px) scale(1.03);
+    transition: box-shadow 0.3s, transform 0.3s;
+    cursor: pointer;
+
+}
+
+.header .Log nav  a{
+    color:#ff9510;
+    font-weight: 600;
+}
+
+.hero {
+    position: relative;
+    background-image: url("../Asset/Img/cover3.jpg");
+    width: 1200px;
+    height: 600px; 
+}
+
+.hero .heroEtc {
+    position: absolute;
+    top: 2%;
+    left: 0%;
+
+    max-width: 520px;
+    max-height: 435px;
+    padding: 70px;
+
+    background: rgba(255, 255, 255, 0.50);
+    backdrop-filter: blur(3px);
+   -webkit-backdrop-filter: blur(3px);
+
+   box-shadow:0 20px 40px rgba(0,0,0,0.15)
+}
+
+.hero .heroEtc h1{
+    font-size: 70px;
+    color: #0b1d33;
+    margin-top: -20px; 
+    margin-bottom: 20px;
+    letter-spacing: 1.5px;
+    
+}
+
+.hero .heroEtc h1 span{
+    font-weight: 8000;
+}
+
+.hero .heroEtc h2{
+    font-size: 50px;
+    color: #0b1d33;
+    margin-top: -20px;
+}
+
+.hero .heroETC h2 span {
+    font-weight: 800;
+}
+
+.hero .heroEtc p{
+    color: #0b1d33;
+    line-height: 1.5;
+    
+}
+
+/* Move only the first paragraph higher (doesn't affect .subs) */
+.hero .heroEtc p:first-of-type {
+    margin-top: -30px; /* adjust as needed */
+}
+
+
+.searchContainer {
+    background-color: white;
+    padding: 15px;
+    display: flex;
+    
+}
+
+.LA {
+    color: red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Love button styles */
+.love-btn{
+    background: blue;
+    border: none; 
+    cursor: pointer;
+    padding: 5px;
+    font-size: 10px;
+    color: #fff; /* white heart by default */
+    outline: none;
+    border-radius: 20px;
+   
+}
+
+.love-btn:focus{
+    outline-offset: 2px;
+}
+
+.love-btn.active{
+    color: gold; /* gold when active */
+}
